@@ -15,12 +15,7 @@ const Home = ({ navigation }) => {
                 <ProfileMe name="Alwi Assegaff" />
                 <SearchItem />
                 <View style={styles.content}>
-                    <List />
-                    <List />
-                    <List />
-                    <List />
-                    <List />
-                    <List />
+                    <List onPress={()=>navigation.navigate('Profile')}/>
                     <List />
                     <List />
                     <List />

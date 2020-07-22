@@ -4,7 +4,7 @@ import { colors, container } from '../utils'
 import { IconCamera } from '../asset/icon'
 import { Gaf, Input } from '../component'
 
-const AddContact = () => {
+const AddContact = ({navigation}) => {
     return (
         <View style={container.page}>
             <ScrollView
@@ -17,16 +17,19 @@ const AddContact = () => {
                     </TouchableOpacity>
 
                     <View>
-                        <Input label="Nama" />
-                        <Input label="No Telepon" />
-                        <Input label="Email" />
+                        <Input label="Nama" icon ="nama"/>
+                        <Input label="No Telepon" icon="phone"/>
+                        <Input label="Email" icon ="email"/>
+                        <Input label="Alamat" icon="home"/>
+
                     </View>
 
                 </View>
             </ScrollView>
 
             <View style={styles.wrapButton}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                onPress={()=>navigation.goBack()}>
                      <Text style={styles.button}>Batal</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
@@ -47,6 +50,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
         paddingTop: 10,
         paddingBottom: 50,
+        marginBottom:50
 
     },
     scroll: {

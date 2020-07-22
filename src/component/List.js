@@ -3,9 +3,11 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { ILUser, ILUser2 } from '../asset'
 import { colors } from '../utils/colors'
 
-const List = () => {
+const List = ({onPress}) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity 
+        onPress={onPress}
+        style={styles.container}>
             <View style={styles.wrap}>
                 <Image source={ILUser2} style={styles.image} />
             </View>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, TextInput } from 'react-native'
 import { colors } from '../utils'
-import { IconSmile } from '../asset'
+import { IconSmile, IconHome, IconPhone, IconEmail } from '../asset'
 
-const Input = ({ label }) => {
+const Input = ({ label, icon }) => {
     const [border, setBorder] = useState(colors.secondary)
     const onFocusForm = () => {
         setBorder(colors.float)
@@ -11,13 +11,26 @@ const Input = ({ label }) => {
     const onBlurForm = () => {
         setBorder(colors.secondary)
     }
+    const Icon = () => {
+        if (icon === "name") {
+            return <IconSmile />
+        }
+        if (icon === "home") {
+            return <IconHome />
+        }
+        if (icon === "phone") {
+            return <IconPhone />
+        } if (icon === "email") {
+            return <IconEmail />
+        }
+        return <IconSmile />
+    }
     return (
         <View style={styles.container}>
             <View style={styles.labelWrap}>
-                <IconSmile />
+                <Icon />
                 <Text style={styles.label}>{label}</Text>
             </View>
-
             <TextInput
                 onFocus={onFocusForm}
                 onBlur={onBlurForm}
