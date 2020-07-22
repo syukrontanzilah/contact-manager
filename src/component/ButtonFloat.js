@@ -3,9 +3,11 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { colors } from '../utils/colors'
 import { IconAdd } from '../asset'
 
-const ButtonFloat = () => {
+const ButtonFloat = ({onPress}) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity 
+        onPress={onPress}
+        style={styles.container}>
            <IconAdd/>
         </TouchableOpacity>
     )

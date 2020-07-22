@@ -1,14 +1,17 @@
 import React from 'react'
 import { ScrollView, StyleSheet, View } from 'react-native'
-import { Gaf, List, ProfileMe, SearchItem, ButtonFloat } from '../component'
-import { colors } from '../utils/colors'
+import { ButtonFloat, Gaf, List, ProfileMe, SearchItem } from '../component'
+import { colors, container } from '../utils'
 
-const Home = () => {
+
+const Home = ({ navigation }) => {
     return (
-        <View style={styles.page}>
+        <View style={container.page}>
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 style={styles.scroll}>
+                <Gaf height={50} />
+
                 <ProfileMe name="Alwi Assegaff" />
                 <SearchItem />
                 <View style={styles.content}>
@@ -16,12 +19,19 @@ const Home = () => {
                     <List />
                     <List />
                     <List />
-                    <Gaf height={1000} />
+                    <List />
+                    <List />
+                    <List />
+                    <List />
+                    <List />
+
+                    <Gaf height={20} />
                 </View>
 
             </ScrollView>
 
-            <ButtonFloat />
+            <ButtonFloat
+                onPress={() => navigation.navigate('AddContact')} />
 
         </View>
     )
@@ -39,9 +49,10 @@ const styles = StyleSheet.create({
     },
     content: {
         backgroundColor: colors.desc,
-        borderRadius: 20,
+        borderRadius: 30,
         paddingHorizontal: 15,
-        paddingTop: 10
+        paddingTop: 10,
+        marginBottom:100
 
     }
 })
