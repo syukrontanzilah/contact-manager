@@ -2,8 +2,8 @@ import React from 'react'
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { IconMessage, IconPhoneGreen, IconStar, IconWA, ILUser2 } from '../asset'
 import { Gaf } from '../component'
-import { colors, container } from '../utils'
 import BottomTab from '../component/BottomTab'
+import { colors, container } from '../utils'
 
 const Profile = ({navigation}) => {
     return (

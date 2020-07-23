@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, TextInput } from 'react-native'
+import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { IconEmail, IconHome, IconPhone, IconSmile } from '../asset'
 import { colors } from '../utils'
-import { IconSmile, IconHome, IconPhone, IconEmail } from '../asset'
 
 const Input = ({ label, icon }) => {
     const [border, setBorder] = useState(colors.secondary)

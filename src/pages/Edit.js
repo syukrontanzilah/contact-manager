@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
-import { container, colors } from '../utils'
-import Input from '../component/Input'
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { IconBack } from '../asset'
+import Input from '../component/Input'
+import { colors, container } from '../utils'
 
 const Edit = ({ navigation }) => {
     return (

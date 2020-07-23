@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import { container, colors } from '../utils'
-import { IconQRBlack, ILUser, IconBack, ILUser2 } from '../asset'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { IconBack, IconQRBlack, ILUser2 } from '../asset'
+import { colors, container } from '../utils'
 
 const KodeQR = ({navigation}) => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
-import { container, colors } from '../utils'
-import { IconShare, IconSearch, IconBack } from '../asset'
+import { StyleSheet, TextInput, TouchableOpacity, View } from 'react-native'
+import { IconBack, IconSearch } from '../asset'
+import { colors, container } from '../utils'
 
 const Search = ({navigation}) => {
     return (

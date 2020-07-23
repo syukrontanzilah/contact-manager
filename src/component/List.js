@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ILUser, ILUser2 } from '../asset'
+import { ILUser2 } from '../asset'
 import { colors } from '../utils/colors'
 
 const List = ({onPress}) => {

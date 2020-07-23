@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const Splash = () => {
     return (
         <View>
-            <Text>splash screen dong</Text>
+            <Text>splash</Text>
         </View>
     )
 }

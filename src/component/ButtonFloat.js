@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import { colors } from '../utils/colors'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 import { IconAdd } from '../asset'
+import { colors } from '../utils/colors'
 
 const ButtonFloat = ({onPress}) => {
     return (

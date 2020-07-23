@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
-import { colors, container } from '../utils'
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { IconCamera } from '../asset/icon'
 import { Gaf, Input } from '../component'
+import { colors, container } from '../utils'
 
 const AddContact = ({navigation}) => {
     return (

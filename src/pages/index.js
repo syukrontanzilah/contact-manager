@@ -6,12 +6,4 @@ import Profile from './Profile';
 import Search from './Search';
 import Splash from './Splash';
 
-export {
-    AddContact,
-    Edit,
-    Home,
-    KodeQR,
-    Profile,
-    Search,
-    Splash,
-}
+export { AddContact, Edit, Home, KodeQR, Profile, Search, Splash, };
