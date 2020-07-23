@@ -3,10 +3,12 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { colors } from '../utils/colors'
 import { IconSearch } from '../asset'
 
-const SearchItem = () => {
+const SearchItem = ({onPress}) => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.touch}>
+            <TouchableOpacity 
+            onPress = {onPress}
+            style={styles.touch}>
                 <IconSearch />
             </TouchableOpacity>
 

@@ -1,10 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
-import { container, colors } from '../utils'
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { IconMessage, IconPhoneGreen, IconStar, IconWA, ILUser2 } from '../asset'
 import { Gaf } from '../component'
-import { ILUser2, ILUser, IconAdd, IconCamera, IconEmail, IconPhone, IconPhoneGreen, IconMessage, IconStar, IconWA } from '../asset'
+import { colors, container } from '../utils'
+import BottomTab from '../component/BottomTab'
 
-const Profile = () => {
+const Profile = ({navigation}) => {
     return (
         <View style={container.page}>
             <ScrollView
@@ -37,12 +38,16 @@ const Profile = () => {
                     <Text style={styles.desc}>Hanaabdullah123@gmail.com</Text>
 
                     <Text style={styles.label}>Alamat:</Text>
-                    <Text style={styles.desc}>Jl. Kembang Kuning Palagan Pahlawan</Text>
+                    <Text style={styles.desc}>Jl. Kembang Kuning Palagan Pahlawan, Sukabumi</Text>
 
                 </View>
 
                 <Gaf height={100} />
             </ScrollView>
+
+            <BottomTab
+            onPress1={()=>navigation.navigate('KodeQR')}
+            onPress2={()=>navigation.navigate('Edit')}/>
 
         </View>
     )
@@ -76,14 +81,17 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 25,
-        color: colors.white
+        color: colors.white,
+        textTransform:'capitalize'
     },
     nomor: {
         fontSize: 14,
         color: colors.secondary
     },
     iconWrap: {
-        flexDirection: 'row', justifyContent: 'space-around', paddingHorizontal: 10
+        flexDirection: 'row', 
+        justifyContent: 'space-around', 
+        paddingHorizontal: 10
     },
     label: {
         fontSize: 14,

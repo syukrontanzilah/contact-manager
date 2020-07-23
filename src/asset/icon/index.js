@@ -8,7 +8,12 @@ import IconPhone from './phone.svg';
 import IconPhoneGreen from './phonegreen.svg';
 import IconMessage from './message.svg';
 import IconStar from './star1.svg';
-import IconWA from './007-whatsapp.svg'
+import IconWA from './007-whatsapp.svg';
+import IconKodeQR from './qr-code.svg';
+import IconEdit from './pencil.svg';
+import IconShare from './connect.svg';
+import IconBack from './back.svg';
+import IconQRBlack from './qr-black.svg'
 
 export {
     IconSearch,
@@ -16,6 +21,7 @@ export {
     IconCamera,
     IconSmile, IconHome,IconEmail, IconPhone,
     IconPhoneGreen, IconMessage,
-    IconStar, IconWA
+    IconStar, IconWA, IconKodeQR, IconEdit,IconShare,
+    IconBack, IconQRBlack,
 
 }

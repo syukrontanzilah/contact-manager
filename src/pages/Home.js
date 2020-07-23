@@ -13,7 +13,7 @@ const Home = ({ navigation }) => {
                 <Gaf height={50} />
 
                 <ProfileMe name="Alwi Assegaff" />
-                <SearchItem />
+                <SearchItem onPress={()=> navigation.navigate('Search')}/>
                 <View style={styles.content}>
                     <List onPress={()=>navigation.navigate('Profile')}/>
                     <List />
