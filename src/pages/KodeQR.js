@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { container, colors } from '../utils'
-import { IconQRBlack, ILUser, IconBack } from '../asset'
+import { IconQRBlack, ILUser, IconBack, ILUser2 } from '../asset'
 
 const KodeQR = ({navigation}) => {
     return (
@@ -15,10 +15,10 @@ const KodeQR = ({navigation}) => {
             <View style={styles.content}>
                 <View style={{ justifyContent: 'center', alignItems: 'center' }}>
                     <View style={styles.profile}>
-                        <Image source={ILUser}
+                        <Image source={ILUser2}
                             style={styles.image} />
                     </View>
-                    <Text style={styles.nama}>Alwi Assegaff</Text>
+                    <Text style={styles.nama}>Hana Abdullah</Text>
                 </View>
                 <View>
                     <View style={styles.wrap}>

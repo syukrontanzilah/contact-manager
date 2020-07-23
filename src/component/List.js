@@ -12,7 +12,7 @@ const List = ({onPress}) => {
                 <Image source={ILUser2} style={styles.image} />
             </View>
             <View style={styles.textWrap}>
-                <Text style={styles.name}>Hana nisa</Text>
+                <Text style={styles.name}>Hana Abdullah</Text>
                 <Text style={styles.desc}>085123457876</Text>
             </View>
 

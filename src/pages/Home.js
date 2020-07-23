@@ -17,8 +17,7 @@ const Home = ({ navigation }) => {
                 <View style={styles.content}>
                     <List onPress={()=>navigation.navigate('Profile')}/>
                     <List />
-                    <List />
-                    <List />
+                 
 
                     <Gaf height={20} />
                 </View>
